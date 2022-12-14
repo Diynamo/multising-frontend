@@ -71,6 +71,10 @@ export const DashboardHeaderContainer = styled.div`
   justify-content: space-between;
   color: #fff;
 
+  .dashboard-header {
+    font-weight: 600;
+  }
+
   .greeting {
     color: #8c8e8f;
     margin-top: 0.5rem;
@@ -94,12 +98,16 @@ export const DashboardHeaderContainer = styled.div`
 
 export const BigCardContainer = styled.div`
   height: 100%;
-  width: 290px;
+  width: 200px;
   background: rgba(17, 24, 29, 1);
   border: none;
   border-radius: 12px;
   color: #e9dbaa;
   padding: 1rem;
+
+  @media screen and (min-width: 1024px) {
+    width: 290px;
+  }
 
   .title-container {
     display: flex;
@@ -142,12 +150,16 @@ export const BigCardContainer = styled.div`
 
 export const SmallCardContainer = styled.div`
   height: 100%;
-  width: 12.5rem;
+  width: 10rem;
   background: rgba(17, 24, 29, 1);
   border: none;
   border-radius: 12px;
   color: #ffffff;
   padding: 1rem;
+
+  @media screen and (min-width: 1024px) {
+    width: 12.5rem;
+  }
 
   .currency-text {
     font-size: 1.125rem;
@@ -163,12 +175,16 @@ export const SmallCardContainer = styled.div`
 
 export const MediumCardContainer = styled.div`
   height: 100%;
-  width: 265px;
+  width: 180px;
   background: rgba(14, 17, 21, 1);
   border: none;
   border-radius: 5px;
   color: #e9dbaa;
   padding: 1rem;
+
+  @media screen and (min-width: 1024px) {
+    width: 265px;
+  }
 
   .info-container {
     display: grid;
@@ -258,7 +274,7 @@ export const VoteBtnContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 105px;
+  width: 60px;
   height: 100%;
   cursor: pointer;
   color: #fff;
@@ -266,6 +282,14 @@ export const VoteBtnContainer = styled.div`
   border-radius: 10px;
   border: 1px solid #292d32;
   margin-left: 0.8rem;
+
+  @media screen and (min-width: 1024px) {
+    width: 105px;
+  }
+`;
+
+export const StyleIcon = styled.div`
+  cursor: pointer;
 `;
 
 // export const BaseAvatar = styled(Avatar)`

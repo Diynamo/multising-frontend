@@ -5,7 +5,9 @@ const DashboardHeader = () => {
   return (
     <DashboardHeaderContainer>
       <div>
-        <Text2XL>Dashboard</Text2XL>
+        <div className="dashboard-header">
+          <Text2XL>Dashboard</Text2XL>
+        </div>
         <div className="greeting">
           <TextBase>Hello, good day</TextBase>
         </div>

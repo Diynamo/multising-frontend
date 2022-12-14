@@ -1,10 +1,6 @@
-import styled from 'styled-components';
+import { StyleIcon } from '../../../styles/home.styles';
 
 function AddIcon() {
-  const StyleIcon = styled.div`
-    cursor: pointer;
-  `;
-
   return (
     <StyleIcon>
       <svg
